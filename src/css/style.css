@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.balance {
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    min-width: 540px;
+    border-radius: 20px;
+    padding: 26px 32px;
+    margin-bottom: 25px;
+}
+
+.balance ul li {
+    color: hsl(33, 100%, 98%);
+}
+
+.balance ul li:first-child {
+    margin-bottom: 10px;
+}
+
+.balance ul li:last-child {
+    font-size: 32px;
+}
+
+.spending {
+    background-color: hsl(33, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    min-width: 540px;
+    height: 510px;
+    padding: 32px 38px;
+    border-radius: 20px;
+}
+
+.spending h2 {
+    font-size: 32px;
+    color: hsl(25, 47%, 15%);
+    margin-bottom: 65px;
+}
+
+.daily-expense ul {
+    position: relative;
+}
+
+.value {
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -40px;
+}
+
+.spending .bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.bar {
+    width: 50px;
+    height: 20px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bar:hover {
+    opacity: 75%;
+}
+
+.bar.active {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.monday {
+    height: 50px;
+}
+
+.tuesday {
+    height: 100px;
+}
+
+.wednesday {
+    height: 150px;
+}
+
+.thursday {
+    height: 90px;
+}
+
+.friday {
+    height: 67px;
+}
+
+.saturday {
+    height: 125px;
+}
+
+.sunday {
+    height: 75px;
+}
+
+.daily-expense ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekday {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.monthly-expense {
+    display: flex;
+    justify-content: space-between;
+}
+
+.monthly-expense .this-month li:first-child {
+    color: hsl(28, 10%, 53%);
+}
+
+.monthly-expense .this-month li:last-child {
+    color: hsl(25, 47%, 15%);
+    font-size: 46px;
+}
+
+.monthly-expense .last-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.monthly-expense .last-month li:first-child {
+    color: hsl(25, 47%, 15%);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.monthly-expense .last-month li:last-child {
+    color: hsl(28, 10%, 53%);
+}
+
+.value.none {
+    display: none;
+}
