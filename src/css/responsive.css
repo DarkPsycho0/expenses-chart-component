@@ -1,0 +1,108 @@
+@media(max-width:425px) {
+
+    .balance,
+    .spending {
+        min-width: 400px;
+    }
+
+    .spending {
+        padding: 26px 32px;
+        height: 440px;
+    }
+
+    .spending h2 {
+        font-size: 30px;
+    }
+
+    .spending .bars {
+        margin-bottom: 0;
+    }
+
+    .value{
+        font-size: 12px;
+        top: -30px;
+    }
+
+    .bar {
+        width: 40px;
+    }
+
+    .weekday {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:375px) {
+
+    .balance,
+    .spending {
+        min-width: 350px;
+    }
+
+    .spending {
+        height: 420px;
+    }
+
+    .spending h2 {
+        font-size: 26px;
+    }
+
+    .value{
+        font-size: 10px;
+        top: -25px;
+    }
+
+    .bar {
+        width: 35px;
+    }
+
+    .monthly-expense .this-month li:last-child {
+        font-size: 36px;
+    }
+
+    .monthly-expense .this-month li:first-child,
+    .monthly-expense .last-month li:first-child,
+    .monthly-expense .last-month li:last-child {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:320px) {
+
+    .balance,
+    .spending {
+        min-width: 300px;
+    }
+
+    .spending h2 {
+        font-size: 21px;
+    }
+
+    .spending {
+        height: 400px;
+    }
+
+    .value{
+        font-size: 10px;
+        top: -20px;
+        padding: 3px;
+    }
+
+    .bar {
+        width: 30px;
+    }
+
+    .monthly-expense .this-month li:last-child {
+        font-size: 30px;
+    }
+
+    .monthly-expense .this-month li:first-child,
+    .monthly-expense .last-month li:first-child,
+    .monthly-expense .last-month li:last-child {
+        font-size: 12px;
+    }
+}
